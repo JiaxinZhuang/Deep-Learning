@@ -8,7 +8,7 @@ Last update on 14th August, 2019,
 
 - mini-ImageNet,  [[Google Drive]](https://drive.google.com/uc?export=download&confirm=qgVQ&id=1HkgrkAwukzEZA0TpO7010PkAOREb2Nuk)  
 
-- OfficeHome,  [[Google Drive]](https://drive.google.com/file/d/0B81rNlvomiwed0V1YUxQdC1uOTg/view http://hemanthdv.org/OfficeHome-Dataset) 
+- OfficeHome, [[Official]](http://hemanthdv.org/OfficeHome-Dataset) [[Google Drive]](https://drive.google.com/file/d/0B81rNlvomiwed0V1YUxQdC1uOTg/view) 
 
 
 
