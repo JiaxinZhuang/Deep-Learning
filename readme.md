@@ -1,6 +1,6 @@
 ## Common Datasets for deep learning
 
-Last update on 14th August, 2019, Keep updating ...
+Last update on 14th August, 2019, 
 
 ###  Few-Shot Tasks
 
@@ -8,7 +8,7 @@ Last update on 14th August, 2019, Keep updating ...
 
 - mini-ImageNet,  [[Google Drive]](https://drive.google.com/uc?export=download&confirm=qgVQ&id=1HkgrkAwukzEZA0TpO7010PkAOREb2Nuk)  
 
-- OfficeHome,  [[Google Drive]](https://drive.google.com/file/d/0B81rNlvomiwed0V1YUxQdC1uOTg/view http://hemanthdv.org/OfficeHome-Dataset/) 
+- OfficeHome,  [[Google Drive]](https://drive.google.com/file/d/0B81rNlvomiwed0V1YUxQdC1uOTg/view http://hemanthdv.org/OfficeHome-Dataset) 
 
 
 
