@@ -1,3 +1,12 @@
+
+
+## Books
+
+1. [Deep Learning](https://github.com/janishar/mit-deep-learning-book-pdf)
+
+2. [PRML](./Books/Bishop - Pattern Recognition And Machine Learning - Springer  2006.pdf)
+3. [Reinforcement Learning](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf)
+
 ## Common Datasets for deep learning
 
 Last update on 14th August, 2019, 
@@ -10,5 +19,16 @@ Last update on 14th August, 2019,
 
 - OfficeHome, [[Official]](http://hemanthdv.org/OfficeHome-Dataset) [[Google Drive]](https://drive.google.com/file/d/0B81rNlvomiwed0V1YUxQdC1uOTg/view) 
 
+### Image Recognition
 
+* STL10, [[Official]](https://cs.stanford.edu/~acoates/stl10/) 
+* Tiny-ImageNet,  [[Official]](https://tiny-imagenet.herokuapp.com)
 
+### Skin Lesion
+
+* Skin-7, [[Official]](https://challenge2018.isic-archive.com/participate/)
+* SD-198, 
+
+### Chest-Ray
+
+* Pneumonia, [[Official]](https://www.kaggle.com/c/rsna- pneumonia-detection-challenge)
