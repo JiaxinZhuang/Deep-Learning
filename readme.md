@@ -4,7 +4,7 @@
 
 1. [Deep Learning](https://github.com/janishar/mit-deep-learning-book-pdf)
 
-2. [PRML]('./Books/Bishop - Pattern Recognition And Machine Learning - Springer  2006.pdf')
+2. [PRML](./Books/PRML-2006.pdf)
 3. [Reinforcement Learning](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf)
 
 ## Common Datasets for deep learning
@@ -31,4 +31,4 @@ Last update on 2nd Sep, 2019,
 
 ### Chest-Ray
 
-* Pneumonia, [[Official]]('https://www.kaggle.com/c/rsna-pneumonia-detection-challenge')
+* Pneumonia, [[Official]](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge)
