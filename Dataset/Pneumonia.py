@@ -99,7 +99,7 @@ def print_dataset(dataset, print_time):
     for index, (img, label) in enumerate(dataset):
         if index % print_time == 0:
             print(img.size(), label)
-            labels.append(label)
+        labels.append(label)
     counter.update(labels)
     print(counter)
 

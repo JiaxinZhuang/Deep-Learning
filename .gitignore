@@ -1,4 +1,4 @@
 tags
-/data/
-!/data/CUB_200_2011/train_test_split.txt
-!/data/pneumonia_data/split_data/
+/Dataset/data/
+!/Dataset/data/CUB_200_2011/train_test_split.txt
+!/Dataset/data/pneumonia_data/split_data/
