@@ -143,7 +143,7 @@ def print_dataset(dataset, print_time):
 
 
 if __name__ == "__main__":
-    root = "../data"
+    root = "./data"
     dataset = CUB(root=root, train=True, transform=transforms.ToTensor())
     print_dataset(dataset, print_time=1000)
 

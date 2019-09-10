@@ -128,7 +128,7 @@ def print_dataset(dataset, print_time):
 
 
 if __name__ == "__main__":
-    root = "../data"
+    root = "./data"
     dataset = TinyImageNet(root=root, mode="train", transform=transforms.ToTensor())
     print_dataset(dataset, print_time=1000)
 
