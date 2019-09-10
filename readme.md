@@ -9,7 +9,7 @@
 
 ## Common Datasets for deep learning
 
-Last update on 2nd Sep, 2019, 
+Last update on 10th Sep, 2019, 
 
 ###  Few-Shot Tasks
 
@@ -35,17 +35,15 @@ Last update on 2nd Sep, 2019,
 
 
 
-### Load Dataset
+## Load Dataset
 
---------
+You can find read file under the Dataset directory, containing main function to test data.
 
-You can find read file under the Dataset directory, containing main function to test dataloader.
-
-| Dataset      | Supported |
-| ------------ | --------- |
-| CUB200-2011  | Y         |
-| Pneumonia    | Y         |
-| Skin7        | Y         |
-| SD198        | Y         |
-| TinyImageNet | Y         |
+| # Dataset    | # Supported | # Train | # Val  |
+| ------------ | ----------- | ------- | ------ |
+| CUB200-2011  | Y           | 5,994   | 5794   |
+| Pneumonia    | Y           | 21,345  | 5,339  |
+| Skin7        | Y           | 8,010   | 2,005  |
+| SD198        | Y           | 5,206   | 1,376  |
+| TinyImageNet | Y           | 100,000 | 10,000 |
 
