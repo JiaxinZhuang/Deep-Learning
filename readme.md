@@ -32,3 +32,20 @@ Last update on 2nd Sep, 2019,
 ### Chest-Ray
 
 * Pneumonia, [[Official]](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge)
+
+
+
+### Load Dataset
+
+--------
+
+You can find read file under the Dataset directory, containing main function to test dataloader.
+
+| Dataset      | Supported |
+| ------------ | --------- |
+| CUB200-2011  | Y         |
+| Pneumonia    | Y         |
+| Skin7        | Y         |
+| SD198        | Y         |
+| TinyImageNet | Y         |
+
