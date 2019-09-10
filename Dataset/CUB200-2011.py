@@ -23,6 +23,7 @@
 import os
 import sys
 
+from torchvision import transforms
 import numpy as np
 from PIL import Image
 import torch
@@ -35,6 +36,7 @@ class CUB(Dataset):
     def __init__(self, root="../data", train=True, transform=None):
         self.root = os.path.join(root, "CUB_200_2011")
         self.train = train
+        self.transform = transform
 
         self.imgs_path, self.targets = self.read_path()
         self.classes = list(set(self.targets))
@@ -55,10 +57,10 @@ class CUB(Dataset):
     def __len__(self):
         return len(self.targets)
 
-    def read_path(slef):
+    def read_path(self):
         """Read img, label and split path.
         """
-	img_txt_file_path = os.path.join(self.root, 'images.txt')
+        img_txt_file_path = os.path.join(self.root, 'images.txt')
         img_txt_file = txt_loader(img_txt_file_path, is_int=False)
         img_name_list = img_txt_file
 
@@ -70,15 +72,15 @@ class CUB(Dataset):
         train_test_file = txt_loader(train_test_file_path, is_int=True)
         train_test_list = train_test_file
 
-	if self.train:
-	    train_img_path = [os.path.join(self.root, "images", x) \
-		              for i, x in zip(train_test_list, img_name_list) if i]
+        if self.train:
+            train_img_path = [os.path.join(self.root, "images", x) \
+                              for i, x in zip(train_test_list, img_name_list) if i]
             train_targets = [x for i, x in zip(train_test_list, label_list) if i]
             imgs_path = train_img_path
             targets = train_targets
         else:
-	    test_img_path = [os.path.join(self.root, "images", x) \
-		             for i, x in zip(train_test_list, img_name_list) if not i]
+            test_img_path = [os.path.join(self.root, "images", x) \
+                             for i, x in zip(train_test_list, img_name_list) if not i]
             test_targets = [x for i, x in zip(train_test_list, label_list) if not i]
             imgs_path = test_img_path
             targets = test_targets
@@ -131,17 +133,19 @@ def print_dataset(dataset, print_time):
     print(len(dataset))
     from collections import Counter
     counter = Counter()
+    labels = []
     for index, (img, label) in enumerate(dataset):
         if index % print_time == 0:
             print(img.size(), label)
-        counter.update(labels)
+        labels.append(label)
+    counter.update(labels)
     print(counter)
 
 
 if __name__ == "__main__":
     root = "../data"
-    dataset = CUB(root=root, train=True, transform=transform.ToTensor())
-    print_dataset(dataset, print_time=100)
+    dataset = CUB(root=root, train=True, transform=transforms.ToTensor())
+    print_dataset(dataset, print_time=1000)
 
-    dataset = CUB(root=root, train=False, transform=transform.ToTensor())
-    print_dataset(dataset, print_time=100)
+    dataset = CUB(root=root, train=False, transform=transforms.ToTensor())
+    print_dataset(dataset, print_time=1000)

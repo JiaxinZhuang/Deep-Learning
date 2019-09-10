@@ -6,17 +6,13 @@
 """Dataset for CUB200-2011.
 
     Directory:
-        CUB_200_2011
         .
-        ├── README
-        ├── attributes
-        ├── bounding_boxes.txt
-        ├── classes.txt
-        ├── image_class_labels.txt
-        ├── images
-        ├── images.txt
-        ├── parts
-        └── train_test_split.txt
+        ├── GCP Credits Request Link - RSNA.txt
+        ├── split_data
+        ├── stage_2_detailed_class_info.csv
+        ├── stage_2_test_images
+        ├── stage_2_train_images
+        └── stage_2_train_labels.csv
 """
 
 
@@ -35,7 +31,7 @@ class PneumoniaDataset(Dataset):
     def __init__(self, root, train=True, transform=None):
         self.root = os.path.join(root, "pneumonia_data")
         self.transform = transform
-        self.train = is_train
+        self.train = train
 
         self.image_data_dir = os.path.join(self.root, 'stage_2_train_images')
         iter_fold = 1
@@ -99,17 +95,19 @@ def print_dataset(dataset, print_time):
     print(len(dataset))
     from collections import Counter
     counter = Counter()
+    labels = []
     for index, (img, label) in enumerate(dataset):
         if index % print_time == 0:
             print(img.size(), label)
-        counter.update(labels)
+            labels.append(label)
+    counter.update(labels)
     print(counter)
 
 
 if __name__ == "__main__":
     root = "../data"
-    dataset = PneumoniaDataset(root=root, train=True, transform=transform.ToTensor())
-    print_dataset(dataset, print_time=100)
+    dataset = PneumoniaDataset(root=root, train=True, transform=transforms.ToTensor())
+    print_dataset(dataset, print_time=10000)
 
-    dataset = PneumoniaDataset(root=root, train=False, transform=transform.ToTensor())
-    print_dataset(dataset, print_time=100)
+    dataset = PneumoniaDataset(root=root, train=False, transform=transforms.ToTensor())
+    print_dataset(dataset, print_time=1000)
